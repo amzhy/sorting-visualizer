@@ -16,9 +16,10 @@ class Body extends Component {
       currentHeapThree,
       currentSorted,
       currentMergeX,
+
     } = this.props;
 
-    const numWidth = Math.floor(document.width / (array.length * 3));
+    const numWidth = Math.floor(window.innerWidth / (array.length * 3));
     const width = `${numWidth}px`;
     const numMargin = array.length < 5 ?
       10 : array.length < 8 ?
