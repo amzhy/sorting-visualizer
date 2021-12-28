@@ -55,7 +55,7 @@ class Toolbar extends Component {
         <div
           id="arraySize"
           style={{color: color}}>
-          Change Array Size & Sorting Speed
+          Size/Speed
         </div>
         <input
           id="changeSize"
@@ -92,7 +92,7 @@ class Toolbar extends Component {
             id="sort"
             style={{color: color, cursor: cursor}}
             onClick={!isRunning ? () => sort(algorithm, array, speed) : null}>
-          Start
+          SORT
           </div> : null
         }
       </div>
