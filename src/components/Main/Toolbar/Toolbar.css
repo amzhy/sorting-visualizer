@@ -13,7 +13,7 @@
 }
 
 #generateArray:hover {
-  color: rgb(212, 212, 212) !important;
+  color: rgb(122, 244, 115) !important;
 }
 
 #generateArrayX {
@@ -57,7 +57,7 @@
 }
 
 .algorithmButton:hover {
-  color: rgb(212, 212, 212);
+  color: rgb(122, 244, 115) !important;
 }
 
 .currentAlgorithmButton {
@@ -78,7 +78,7 @@
 }
 
 #sort:hover {
-  color: rgb(212, 212, 212);
+  color: rgb(122, 244, 115) !important;
 }
 
 input[type=range] {

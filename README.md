@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Sorting & Search Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A tool that helps students visualise common search/sorting algorithms using animations. Speed, size of array etc are customizable.
+Built using React & Redux. 
 
 ## Available Scripts
 

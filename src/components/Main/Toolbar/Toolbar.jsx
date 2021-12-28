@@ -92,7 +92,7 @@ class Toolbar extends Component {
             id="sort"
             style={{color: color, cursor: cursor}}
             onClick={!isRunning ? () => sort(algorithm, array, speed) : null}>
-            Sort!
+          Start
           </div> : null
         }
       </div>
