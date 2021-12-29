@@ -39,7 +39,7 @@ class Toolbar extends Component {
     const speed = 570 - Math.pow(array.length, 2) > 0 ?
       570 - Math.pow(array.length, 2) : 0;
 
-    const color = isRunning ? "rgba(214, 29, 29, 0.8)" : "white";
+    const color = isRunning ? "rgb(204,204,204)" : "white";
 
     const cursor = isRunning ? "auto" : "pointer";
 
@@ -87,12 +87,14 @@ class Toolbar extends Component {
           onClick={() => this.handleClick("bubbleSort")}>
           Bubble Sort
         </div>
-        <div className="separator"></div>
-        { algorithm ? <div
+        <div
+          className="separator"></div>
+        {algorithm ?
+          <div
             id="sort"
-            style={{color: color, cursor: cursor}}
+            style={{ color: color, cursor: cursor }}
             onClick={!isRunning ? () => sort(algorithm, array, speed) : null}>
-          SORT
+            SORT!
           </div> : null
         }
       </div>

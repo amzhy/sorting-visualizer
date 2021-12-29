@@ -1,6 +1,7 @@
 #toolbar {
-  width: 100%;
+  width: 100vw;
   height: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #050a10;
 }
 
@@ -23,7 +24,7 @@
   margin-left: 25px;
   margin-right: 15px;
 }
-
+ 
 #arraySize {
   font-size: 16px;
   font-family: monospace;
@@ -38,21 +39,22 @@
 }
 
 .separator {
-  width: 5px;
-  height: 55px;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-left: 15px;
-  margin-right: 15px;
-  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: rgba(240, 232, 232, 0.5);
+  margin-left: 2vw;
+  margin-top: 40px;
+  margin-right: 2vw;
+  margin-block-end: -5px;
+  display: inline-flex;
 }
-
 .algorithmButton {
   color: white;
   font-size: 16px;
   font-family: monospace;
-  display: inline-block;
+  display: inline-flex;
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 15px; 
   cursor: pointer;
 }
 
@@ -61,11 +63,12 @@
 }
 
 .currentAlgorithmButton {
-  color: rgb(238, 230, 238);
+  color: rgb(122, 244, 115);
   font-size: 16px;
   font-family: monospace;
   display: inline-block;
   margin-left: 15px;
+  margin-bottom: 10px;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -83,40 +86,51 @@
 
 input[type=range] {
     -webkit-appearance: none;
-    border: 1px solid white;
+    border: 0.5px solid white;
     width: 100px;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100px;
-    height: 5px;
+    height: 4px;
     border: none;
-    border-radius: 3px;
+    border-style: hidden;
+    background-color: white;
+    border-radius: 16px;
 }
 
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
-    height: 16px;
-    width: 16px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
-    background: rgb(122, 244, 115);
+    border-radius: 50%;
+    background: rgb(66, 134, 234,0.8);
     margin-top: -4px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,.5);
+    z-index: 2;
 }
 
 input[type=range]:focus {
     outline: none;
 }
 
+
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
+    background: white;
+    height: 5px;
+    border-radius: 10px;
+    box-shadow: inset;
 }
 
 input[type=range]::-moz-range-track {
-    width: 100px;
-    height: 5px;
-    border: none;
-    border-radius: 3px;
+    width: 100px;   
+    height: 3px;
+    border: 5px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 input[type=range]::-moz-range-thumb {
@@ -132,22 +146,27 @@ input[type=range]:-moz-focusring{
     outline-offset: -1px;
 }
 
+input[type=range]::-moz-range-progress{
+  background-color: rgb(122, 244, 115);
+}
+
 input[type=range]::-ms-track {
     width: 100px;
-    height: 5px;
-    background: transparent;
+    height: 3px;
+    background: white;
     border-color: transparent;
+    border-radius: 10px;
     border-width: 6px 0;
     color: transparent;
 }
 
 input[type=range]::-ms-fill-lower {
-    background: #777;
-    border-radius: 10px;
+    background: rgb(242, 254, 22);
+    border-radius: 5px;
 }
 
 input[type=range]::-ms-fill-upper {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 input[type=range]::-ms-thumb {
