@@ -11,3 +11,8 @@ Alogrithms implemented:
 - [x] Quick Sort
 - [x] Heap Sort
 - [x] Bubble Sort
+
+Coming soon;
+- [] Selection sort
+- [] Insertion sort
+- [] Bogosort
