@@ -13,6 +13,6 @@ Alogrithms implemented:
 - [x] Bubble Sort
 
 Coming soon;
-- [] Selection sort
-- [] Insertion sort
-- [] Bogosort
+- [ ] Selection sort
+- [ ] Insertion sort
+- [ ] Bogosort
