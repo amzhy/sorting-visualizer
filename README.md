@@ -6,13 +6,9 @@ A visualization tool to help students learn about sorting algorithms through ani
 
 [Try it here!](https://amzhy.github.io/sorting-visualizer/)
 
-Alogrithms implemented:
-- [x] Merge Sort
-- [x] Quick Sort
-- [x] Heap Sort
-- [x] Bubble Sort
+Sorting Alogrithms covered:
 
-Coming soon;
-- [ ] Selection sort
-- [ ] Insertion sort
-- [ ] Bogosort
+- [x] Mergesort
+- [x] Quicksort
+- [x] Heapsort
+- [x] Bubblesort
