@@ -53,7 +53,7 @@ class Body extends Component {
           return <div
             className="arrayElement"
             key={index}
-            style={{ height: `${number * 3}px`, width: width, marginLeft: margin, marginRigh: margin, backgroundColor: backgroundColor, color: color, fontSize: fontSize }}>
+            style={{ height: `${number * 3}px`, width: width, marginLeft: margin, marginRight: margin, backgroundColor: backgroundColor, color: color, fontSize: fontSize }}>
             {number}
           </div>
         }) : null

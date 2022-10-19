@@ -36,11 +36,8 @@ class Toolbar extends Component {
       isRunning,
     } = this.props;
 
-    const speed = 570 - Math.pow(array.length, 2) > 0 ?
-      570 - Math.pow(array.length, 2) : 0;
-
+    const speed = 570 - Math.pow(array.length, 2) > 0 ? 570 - Math.pow(array.length, 2) : 0;
     const color = isRunning ? "rgb(204,204,204)" : "white";
-
     const cursor = isRunning ? "auto" : "pointer";
 
     return (
@@ -49,7 +46,7 @@ class Toolbar extends Component {
           id={!isRunning ? "generateArray" : "generateArrayX"}
           style={{color: color, cursor: cursor}}
           onClick={!isRunning ? () => generateArray(array.length) : null}>
-          Reset Array
+          Reset
         </div>
         <div className="separator"></div>
         <div
@@ -61,8 +58,8 @@ class Toolbar extends Component {
           id="changeSize"
           type="range"
           min="0"
-          max="100"
-          style={{background: color, cursor: cursor}}
+          max="300"
+          style={{ background: color, color: color }}
           disabled={isRunning ? "disabled" : null}
           onChange={this.handleChange}
           />
@@ -70,22 +67,22 @@ class Toolbar extends Component {
         <div
           className={algorithm === "mergeSort" ? "currentAlgorithmButton" : "algorithmButton"}
           onClick={() => this.handleClick("mergeSort")}>
-          Merge Sort
+          Mergesort
         </div>
         <div
           className={algorithm === "quickSort" ? "currentAlgorithmButton" : "algorithmButton"}
           onClick={() => this.handleClick("quickSort")}>
-          Quick Sort
+          Quicksort
         </div>
         <div
           className={algorithm === "heapSort" ? "currentAlgorithmButton" : "algorithmButton"}
           onClick={() => this.handleClick("heapSort")}>
-          Heap Sort
+          Heapsort
         </div>
         <div
           className={algorithm === "bubbleSort" ? "currentAlgorithmButton" : "algorithmButton"}
           onClick={() => this.handleClick("bubbleSort")}>
-          Bubble Sort
+          Bubblesort
         </div>
         <div
           className="separator"></div>
@@ -94,7 +91,7 @@ class Toolbar extends Component {
             id="sort"
             style={{ color: color, cursor: cursor }}
             onClick={!isRunning ? () => sort(algorithm, array, speed) : null}>
-            SORT!
+            <b>SORT!</b>
           </div> : null
         }
       </div>
